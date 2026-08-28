@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Mattafin Hardware — Address, Phone &amp; Enquiries</title>
+<meta name="description" content="Get in touch with Mattafin Hardware. Find our address, phone number, opening hours, and send an enquiry directly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="nav-wrap container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.jpeg" alt="Mattafin Hardware logo">
+      MATTAFIN <span class="sub">HARDWARE</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="materials.html">Materials</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section container">
+    <h1>Get in touch</h1>
+
+    <div class="contact-grid">
+      <div class="map-embed" style="min-height:280px">
+        <iframe title="Mattafin Hardware location" loading="lazy" src="https://www.google.com/maps?q=Mattafin&output=embed"></iframe>
+      </div>
+
+      <div>
+        <div class="contact-details">
+          <p>&#128222; <a href="tel:0744923257">074 492 3257</a></p>
+          <p>&#128172; <a href="https://wa.me/0744923257" target="_blank" rel="noopener">WhatsApp us</a></p>
+          <p>&#128205; Main Road, Mattafin</p>
+          <p>&#128337; Mon&ndash;Sat 7:30&ndash;17:00</p>
+        </div>
+
+        <form class="contact-form mt-2" novalidate>
+          <h3>Send an enquiry</h3>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name">
+
+          <label for="contact">Phone or email</label>
+          <input type="text" id="contact" name="contact" autocomplete="tel">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="site-footer-bottom" style="background:var(--maroon)">
+    <span>Facebook &middot; Instagram</span>
+    <br>
+    &copy; <span id="year"></span> Mattafin Hardware. All rights reserved.
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
